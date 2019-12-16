@@ -539,3 +539,66 @@ a:link {
     font-size: 1.8rem; }
   .searcher-container input {
     width: 25vw; } }
+
+/* Mobile L */
+@media (min-width: 425px) {
+  .menu-first-item {
+    font-size: 2rem; }
+  .header-container {
+    background-position-y: center; }
+  .nav-container {
+    flex: 1 1 80%; }
+  .searcher-container {
+    padding-right: 5vw; }
+  .social-media-item {
+    font-size: 1.2rem; }
+  .searcher-icon-container {
+    flex: 0.1 1 auto; }
+  .social-media-item {
+    flex: 0.1 1 auto; }
+  .searcher-icon {
+    flex: 0.1 1 auto; }
+  .social-media-list {
+    flex: 1 1 12%; }
+  .burger {
+    flex: 1 1 8%; }
+  .line {
+    max-width: 30px; }
+    .line::before {
+      max-width: 30px; }
+    .line::after {
+      max-width: 30px; }
+  .down-header-item {
+    font-size: 6.5rem;
+    line-height: 5.1rem; }
+    .down-header-item:nth-child(1)::after {
+      font-size: 4.5rem;
+      line-height: 3.6rem; }
+  .section-a {
+    height: 100vh; }
+  .section-a-picture-bigger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh; }
+  .section-a-picture-smaller {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 287px;
+    height: 175px;
+    border-radius: 6px; }
+  .section-a-img-bigger {
+    width: 440px;
+    height: 330px; }
+  .section-a-img-smaller {
+    display: flex;
+    width: 287px;
+    height: 175px;
+    bottom: 26px;
+    border-radius: 6px; }
+  .footer-container {
+    background-position-y: center; } }
