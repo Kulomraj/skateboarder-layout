@@ -805,3 +805,55 @@ a:link {
     font-size: 1.4rem; }
   .copyrights {
     font-size: 1.2rem; } }
+
+/* Laptop L */
+@media (min-width: 1320px) {
+  .header-container::before {
+    bottom: 0;
+    height: 120vh; }
+  .menu-first-item {
+    font-size: 3rem; }
+  .searcher-container {
+    flex: 1; }
+  .searcher-item {
+    font-size: 1.5rem; }
+  .menu-list-item {
+    font-size: 1.5rem; }
+  .social-media-item {
+    font-size: 1.5rem; }
+  .down-header-item:nth-child(1) {
+    font-size: 15rem;
+    line-height: 11.5rem; }
+    .down-header-item:nth-child(1)::after {
+      font-size: 10rem;
+      line-height: 8rem; }
+  .header-button {
+    font-size: 1.6rem; }
+  .section-a-content-item:nth-child(1) {
+    font-size: 6.5rem;
+    padding-top: 3vh; }
+  .section-a-content-item:nth-child(2) {
+    font-size: 1.7rem; }
+  .section-a-button {
+    font-size: 1.6rem; }
+  .section-a-img-bigger {
+    width: 700px;
+    height: 540px; }
+  .section-a-img-smaller {
+    width: 455px;
+    height: 290px;
+    bottom: -15px; }
+  .footer-container {
+    height: 60vh; }
+  .footer-title {
+    font-size: 7rem; }
+  .footer-contact-item-icon {
+    font-size: 5rem; }
+  .footer-contact-item-data h3 {
+    font-size: 2rem; }
+  .footer-contact-item-data p {
+    font-size: 1.5rem; }
+  .footer-sm-container {
+    font-size: 1.8rem; }
+  .copyrights {
+    font-size: 1.5rem; } }
