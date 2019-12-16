@@ -972,3 +972,19 @@ a:link {
     padding-bottom: 2vh; }
   .footer-container {
     height: 120vh; } }
+
+/* Mobile M rotate of screen */
+@media (max-height: 375px) {
+  .menu-list {
+    padding-top: 4vh; }
+  .down-header {
+    padding-top: 5vh; }
+  .section-a-img-bigger {
+    width: 340px;
+    height: 280px; }
+  .section-a-img-smaller {
+    width: 225px;
+    height: 156px;
+    bottom: 8.3vh; }
+  .copyrights {
+    font-size: 0.9rem; } }
