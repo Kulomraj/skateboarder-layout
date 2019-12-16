@@ -525,3 +525,123 @@ a {
     position: absolute;
     display: none;
 }
+
+/* Footer */
+
+.footer-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh 5vw;
+    align-items: center;
+    background-image: url(images/footer-height.jpg);
+    background-size: cover;
+    color: $light;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        background: $dark;
+        width: inherit;
+        height: inherit;
+        opacity: 0.8;
+        top: 0;
+        z-index: 2;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        height: 0;
+        width: 0;
+        border: 15vw solid transparent;
+        --border-width: 15vw; 
+        border-bottom-color: $third;
+        border-top: none;
+        bottom: 0;
+        right: calc(-1 * var(--border-width));
+    }
+}
+
+.footer-title {
+    font-size: 3.5rem;
+    opacity: 0.8;
+    flex: 1;
+    z-index: 3;
+}
+
+.footer-contact-container {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 6;
+    z-index: 3;
+}
+
+.footer-contact-item {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    align-items: center;
+}
+
+.footer-contact-item-icon {
+    font-size: 3rem;
+    padding: 0 5vw 0 0;
+    width: 20vw;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.footer-contact-item-data {
+    display: flex;
+    flex-flow: column wrap;
+    h3 {
+        padding: 0 0 2vh 0;
+    } 
+    p {
+        opacity: 0.8;
+    }
+}
+
+.footer-sm-container {
+    display: flex;
+    z-index: 3;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    width: 60vw;
+}
+
+.footer-sm-item {
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.copyrights {
+    z-index: 3;
+    flex: 0.5;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.8;
+    position: relative;
+    font-size: 0.8rem;
+    justify-content: center;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80vw;
+        height: 0.3vh;
+        background: $light;
+        z-index: 3;
+        opacity: 0.8;
+        top: 0;
+    }
+}
