@@ -754,3 +754,110 @@ a {
         background-position-y: center;
     }
 }
+
+/* Tablet */
+
+@media(min-width: 768px) {
+    .header-container {
+        background: url(images/skateboard.jpg);
+        background-size: cover;
+    }
+    .menu-container {
+        padding-top: 27.5px;
+    }
+    .menu-first-item {
+        font-size: 3rem;
+    }
+    .searcher-container {
+        padding-right: 15vw;
+    }
+    .searcher-item {
+        padding: 1vh 2vw;
+        font-size: 1rem;
+    }
+    .menu-list {
+        height: 86vh;
+        top: 14vh;
+    }
+    .down-header {
+        padding: 7vh 0;
+    }
+    .down-header-item {
+        font-size: 9rem;
+        line-height: 7rem;
+        &:nth-child(1) {
+            &::after {
+                font-size: 5.5rem;
+                line-height: 4.3rem;
+            }
+        }
+    }
+    .header-button {
+        padding: 2vh 4vw;
+    }
+    .section-a {
+        padding: 1vh 10vw;
+        height: 140vh;
+    }
+    .section-a-content {
+        flex: 2;
+    }
+    .section-a-content-item {
+        &:nth-child(1) {
+            font-size: 5rem;
+        }
+        &:nth-child(2) {
+            font-size: 1.2rem;
+        }
+    }
+    .section-a-button {
+        padding: 2vh 4vw;
+    }
+    .section-a-picture-container {
+        padding-top: 5vh;
+    }
+    .section-a-picture-smaller {
+        width: 287px;
+        height: 175px;
+        border-radius: 6px;
+    }
+    .section-a-img-bigger {
+        width: 740px;
+        height: 530px;
+    }
+    .section-a-img-smaller {
+        display: flex;
+        width: 478px;
+        height: 300px;
+        bottom: -17px;
+    }
+    .footer-container {
+        background: url(images/footer-width.jpg);
+        background-size: cover;
+        height: 80vh;
+        padding-bottom: 2vh;
+    }
+    .footer-title {
+        font-size: 5rem;
+    }
+    .footer-contact-container {
+        flex-flow: row wrap;
+        width: 75vw;
+    }
+    .footer-contact-item-icon {
+        padding-right: 1vw;
+    }
+    .footer-contact-item {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .footer-sm-container {
+        font-size: 1rem;
+    }
+    .copyrights {
+        font-size: 0.9rem;
+        &::before {
+            width: 60vw;
+        }
+    }
+}
