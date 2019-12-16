@@ -197,6 +197,99 @@ a:link {
   .social-media-item:hover {
     opacity: 0.8; }
 
+.menu-list {
+  position: absolute;
+  right: 0px;
+  height: 95vh;
+  top: 5vh;
+  width: 30vw;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in; }
+
+.menu--active {
+  transform: translateX(0%);
+  z-index: 4; }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.burger {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 30.25px;
+  justify-content: center;
+  cursor: pointer;
+  flex: 1 1 5%;
+  align-items: flex-end;
+  z-index: 3; }
+
+.line {
+  white-space: nowrap;
+  background: #ffffff;
+  height: 3.85px;
+  width: 5vw;
+  min-width: 25px;
+  border-radius: 50px;
+  position: relative; }
+  .line::before {
+    white-space: nowrap;
+    background: #ffffff;
+    height: 3.85px;
+    width: 5vw;
+    min-width: 25px;
+    border-radius: 50px;
+    content: "";
+    top: -8.8px;
+    position: absolute;
+    animation: restore-rotate-90-clockwise 1s ease forwards; }
+  .line::after {
+    white-space: nowrap;
+    background: #ffffff;
+    height: 3.85px;
+    width: 5vw;
+    min-width: 25px;
+    border-radius: 50px;
+    content: "";
+    top: 8.8px;
+    position: absolute;
+    animation: restore-rotate-90-anticlockwise 1s ease forwards; }
+
+.toggle--burger .line {
+  background: transparent; }
+  .toggle--burger .line::before {
+    animation: rotate-90-clockwise 0.5s ease forwards; }
+  .toggle--burger .line::after {
+    animation: rotate-90-anticlockwise 0.5s ease forwards; }
+
+@keyframes restore-rotate-90-clockwise {
+  0% {
+    transform: rotateZ(-405deg) translate3d(-0.38rem, 0.3rem, 0); }
+  100% {
+    transform: rotateZ(0) translate3d(0); } }
+
+@keyframes restore-rotate-90-anticlockwise {
+  0% {
+    transform: rotateZ(405deg) translate3d(-0.38rem, -0.3rem, 0); }
+  100% {
+    transform: rotateZ(0) translate3d(0); } }
+
+@keyframes rotate-90-clockwise {
+  0% {
+    transform: rotateZ(0) translate3d(0); }
+  100% {
+    transform: rotateZ(-405deg) translate3d(-0.38rem, 0.3rem, 0); } }
+
+@keyframes rotate-90-anticlockwise {
+  0% {
+    transform: rotateZ(0) translate3d(0); }
+  100% {
+    transform: translateY(-0.3em) rotateZ(405deg) translate3d(-0.38rem, -0.3rem, 0); } }
+
 .down-header {
   list-style: none;
   display: flex;
