@@ -905,3 +905,50 @@ a:link {
     font-size: 2rem; }
   .copyrights {
     font-size: 1.8rem; } }
+
+/* Desktop L */
+@media (min-width: 2300px) {
+  .header-container::before {
+    height: 120vh; }
+  .menu-first-item {
+    font-size: 6rem; }
+  .searcher-item {
+    font-size: 2.8rem; }
+  .menu-list-item {
+    font-size: 2.7rem; }
+  .social-media-item {
+    font-size: 2.7rem; }
+  .down-header-item:nth-child(1) {
+    font-size: 23rem;
+    line-height: 17.8rem; }
+    .down-header-item:nth-child(1)::after {
+      font-size: 15rem;
+      line-height: 12rem; }
+  .header-button {
+    font-size: 2.5rem; }
+  .section-a-content-item:nth-child(1) {
+    font-size: 11rem;
+    padding-top: 3vh; }
+  .section-a-content-item:nth-child(2) {
+    font-size: 2.7rem; }
+  .section-a-button {
+    font-size: 2.5rem; }
+  .section-a-img-bigger {
+    width: 1100px;
+    height: 820px; }
+  .section-a-img-smaller {
+    width: 720px;
+    height: 455px;
+    bottom: -6vh; }
+  .footer-title {
+    font-size: 12rem; }
+  .footer-contact-item-icon {
+    font-size: 10rem; }
+  .footer-contact-item-data h3 {
+    font-size: 3.8rem; }
+  .footer-contact-item-data p {
+    font-size: 2.5rem; }
+  .footer-sm-container {
+    font-size: 3rem; }
+  .copyrights {
+    font-size: 2.2rem; } }
