@@ -530,3 +530,12 @@ a:link {
       transform: rotateZ(0) translate3d(0); }
     100% {
       transform: translateY(-0.3em) rotateZ(405deg) translate3d(-0.38rem, -0.3rem, 0); } } }
+
+/*Mobile M*/
+@media (min-width: 375px) {
+  .section-a {
+    height: 110vh; }
+  .menu-first-item {
+    font-size: 1.8rem; }
+  .searcher-container input {
+    width: 25vw; } }

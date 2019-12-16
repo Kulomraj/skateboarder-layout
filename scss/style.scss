@@ -649,3 +649,20 @@ a {
         }
     }
 }
+
+/*Mobile M*/
+
+@media(min-width: 375px) {
+    .section-a {
+        height: 110vh;
+    }
+    .menu-first-item {
+        font-size: 1.8rem;
+    }
+    .searcher-container {
+        input {
+            width: 25vw;
+        }
+    }
+
+} 
