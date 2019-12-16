@@ -334,3 +334,102 @@ a:link {
   .header-button:active {
     background: #999999;
     border: none; }
+
+/* Section A */
+.section-a {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
+  padding: 1vh 5vw;
+  align-items: center;
+  background: #ffffff;
+  position: relative; }
+  .section-a::before {
+    content: "";
+    z-index: 1;
+    height: 0;
+    width: 0;
+    border: 20vw solid transparent;
+    --border-width: 20vw;
+    border-top-color: black;
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    right: calc(-1 * var(--border-width)); }
+  .section-a::after {
+    content: "";
+    z-index: 4;
+    height: 0;
+    width: 0;
+    border: 20vw solid transparent;
+    --border-width: 20vw;
+    border-left-color: #b22222;
+    border-right: none;
+    position: absolute;
+    left: 0;
+    bottom: calc(-1 * var(--border-width)); }
+
+.section-a-content {
+  text-align: center;
+  flex: 3;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1rem;
+  z-index: 2; }
+
+.section-a-content-item:nth-child(1) {
+  font-size: 3.5rem;
+  flex: 2;
+  opacity: 0.8;
+  padding: 5vh 0 0 0; }
+
+.section-a-content-item:nth-child(2) {
+  flex: 2;
+  opacity: 0.8;
+  padding: 5vh 0 0 0; }
+
+.section-a-content-item:nth-child(3) {
+  flex: 1;
+  padding: 5vh 0 0 0; }
+
+.section-a-button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 1.5vh 4vw;
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-family: 'roboto', 'sans-serif';
+  background: #b22222;
+  text-shadow: 0 0 1px black;
+  border: none;
+  opacity: 0.8; }
+  .section-a-button:hover {
+    background: #c14e4e; }
+  .section-a-button:active {
+    background: #8e1b1b; }
+
+.section-a-picture-container {
+  flex: 3;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center; }
+
+.section-a-picture-bigger {
+  flex: 3;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center; }
+
+.section-a-img-bigger {
+  width: 80vw;
+  flex: 1;
+  padding: 3vh 0;
+  position: absolute; }
+
+.section-a-img-smaller {
+  position: absolute;
+  display: none; }
