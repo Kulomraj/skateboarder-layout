@@ -64,7 +64,7 @@ a {
     display: flex;
     flex-flow: row nowrap;
     width: 100vw;
-    padding: 11px 5vw 0 5vw;
+    padding: 11px 5vw 1.5vh 5vw;
     align-items: center;
     z-index: 5;
     position: sticky;
@@ -764,6 +764,7 @@ a {
     }
     .menu-container {
         padding-top: 27.5px;
+        padding-bottom: 2vh;
     }
     .menu-first-item {
         font-size: 3rem;
@@ -1196,6 +1197,86 @@ a {
     }
 }
 
+/* 1920 x 1440 screens */ 
+
+@media(min-height: 1340px) {
+  .header-container {
+    &::before {
+        height: 110vh;
+    }
+  }
+  .menu-first-item {
+      font-size: 5rem;
+  }
+  .searcher-item {
+      font-size: 2.5rem;
+  }
+  .menu-list-item {
+      font-size: 2.2rem;
+  }
+  .social-media-item {
+      font-size: 2.7rem;
+  }
+  .down-header-item {
+      &:nth-child(1) {
+          font-size: 23rem;
+          line-height: 17.8rem;
+          &::after {
+              font-size: 15rem;
+              line-height: 12rem;
+          }
+      }
+  } 
+  .header-button {
+      font-size: 2.5rem;
+  }
+  .section-a-content-item {
+      &:nth-child(1) {
+          font-size: 9rem;
+          padding-top: 3vh;
+          flex: 1.5;
+      }
+      &:nth-child(2) {
+          font-size: 2.6rem;
+      }
+  }
+  .section-a-button {
+      font-size: 2.5rem;
+  }
+  .section-a-img-bigger {
+      width: 1000px;
+      height: 780px;
+  }
+  .section-a-img-smaller {
+      width: 650px;
+      height: 420px;
+      bottom: -4.5vh;
+  }
+  .footer-container {
+      height: 50vh;
+  }
+  .footer-title {
+      font-size: 9rem;
+  }
+  .footer-contact-item-icon {
+      font-size: 8rem;
+  }
+  .footer-contact-item-data {
+      h3 {
+          font-size: 3.2rem;
+      }
+      p {
+          font-size: 2.2rem;
+      }
+  }
+  .footer-sm-container {
+      font-size: 3rem;
+  }
+  .copyrights {
+      font-size: 2.2rem;
+  }
+}
+
 /* Desktop L */
 
 @media(min-width: 2300px) {
@@ -1233,6 +1314,7 @@ a {
         &:nth-child(1) {
             font-size: 11rem;
             padding-top: 3vh;
+            flex: 2;
         }
         &:nth-child(2) {
             font-size: 2.7rem;
@@ -1249,6 +1331,9 @@ a {
         width: 720px;
         height: 455px;
         bottom: -6vh;
+    }
+    .footer-container {
+        height: 60vh;
     }
     .footer-title {
         font-size: 12rem;
