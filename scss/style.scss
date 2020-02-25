@@ -138,7 +138,8 @@ a {
     z-index: 3;
     flex: 1;
     order: 2;
-    animation: reverse-scaling 1s ease forwards;
+    transform: scale(0);
+    transition: transform 1s ease;
     input {
         flex: 3;
         width: 22vw;
@@ -171,26 +172,9 @@ a {
 }
 
 .searcher--active {
-    animation: scaling 1s ease forwards;
+    transform: scale(1);
+    transition: transform 1s ease;
     z-index: 4;
-}
-
-@keyframes scaling {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes reverse-scaling {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
 }
 
 .searcher-icon-container {
@@ -204,30 +188,14 @@ a {
 }
 
 .searcher-icon {
-    animation: reverse-rotating 1s ease forwards;
+    transform: rotate(-360deg);
+    transition: transform 1s ease;
 }
 
 .toggle--searcher {
     .searcher-icon {
-        animation: rotating 1s ease forwards;
-    }
-}
-
-@keyframes rotating {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes reverse-rotating {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-360deg);
+        transition: transform 1s ease;
     }
 }
 
@@ -595,60 +563,28 @@ a {
             content: "";
             top: -8.8px;
             position: absolute;
-            animation: restore-rotate-90-clockwise 1s ease forwards;
+            transform: rotateZ(0) translate3d(0);
+            transition: transform 1s ease;
         }
         &::after {
             @include burger-line;
             content: "";
             top: 8.8px;
             position: absolute;
-            animation: restore-rotate-90-anticlockwise 1s ease forwards;
+            transform: rotateZ(0) translate3d(0);
+            transition: transform 1s ease;
         }
     }
     
     .toggle--burger .line {
         background: transparent;
         &::before {
-            animation: rotate-90-clockwise 0.5s ease forwards;
+            transform: rotateZ(-405deg) translate3d(-0.38rem, 0.3rem, 0);
+            transition: transform 0.5s ease;
         }
         &::after {
-            animation: rotate-90-anticlockwise 0.5s ease forwards;
-        }
-    }
-    
-    @keyframes restore-rotate-90-clockwise {
-        0% {
-            transform: rotateZ(-405deg) translate3d(-0.38rem, 0.3rem, 0);
-        }
-        100% {
-            transform: rotateZ(0) translate3d(0);
-        }
-    }
-    
-    @keyframes restore-rotate-90-anticlockwise {
-        0% {
-            transform: rotateZ(405deg) translate3d(-0.38rem, -0.3rem, 0);
-        }
-        100% {
-            transform: rotateZ(0) translate3d(0);
-        }
-    }
-    
-    @keyframes rotate-90-clockwise {
-        0% {
-            transform: rotateZ(0) translate3d(0);
-        }
-        100% {
-            transform: rotateZ(-405deg) translate3d(-0.38rem, 0.3rem, 0);
-        }
-    }
-    
-    @keyframes rotate-90-anticlockwise {
-        0% {
-            transform: rotateZ(0) translate3d(0);
-        }
-        100% {
             transform: translateY(-0.3em) rotateZ(405deg) translate3d(-0.38rem, -0.3rem, 0);
+            transition: transform 0.5s ease;
         }
     }
 }
