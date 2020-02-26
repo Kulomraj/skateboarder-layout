@@ -24,7 +24,7 @@ body {
     font-size: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: 'roboto', 'sans-serif';
+    font-family: 'roboto', arial, sans-serif;
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
@@ -167,7 +167,7 @@ a {
     border: none;
     border-radius: 5px;
     padding: 0.5vh 2vw;
-    font-family: 'roboto', 'sans-serif';
+    font-family: 'roboto', arial, sans-serif;
     font-size: 0.8rem;
 }
 
@@ -259,7 +259,7 @@ a {
     padding: 1.5vh 4vw;
     font-size: 0.9rem;
     color: $dark;
-    font-family: 'roboto', 'sans-serif';
+    font-family: 'roboto', arial, sans-serif;
     background: $light;
     text-shadow: 0 0 1px $dark;
     border: none;
@@ -346,7 +346,7 @@ a {
     padding: 1.5vh 4vw;
     font-size: 0.9rem;
     color: $light;
-    font-family: 'roboto', 'sans-serif';
+    font-family: 'roboto', arial, sans-serif;
     background: $third;
     text-shadow: 0 0 1px $dark;
     border: none;
